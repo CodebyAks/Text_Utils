@@ -1,0 +1,2 @@
+import adb,  {raja, chor, sipahi, prahri} from './module2.mjs'
+console.log(`Aakash k dwara ek city ka nav nirman kiya ja rha h jiska raja hoga ${raja} rani hogi ${adb} chor hoga ${chor} sipahi hoga ${sipahi}`)
