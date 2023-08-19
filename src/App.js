@@ -1,11 +1,11 @@
 import React from 'react';
 import { useState } from 'react';
 import './App.css';
-import About from './Components/About';
+// import About from './Components/About';
 import Formarea1 from './Components/Formarea1';
 import Navbar1 from './Components/Navbar1';
 import Alert from './Components/Alert';
-import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
+// import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
 
 import Formarea from './Components/Formarea';
 function App() {
@@ -55,26 +55,30 @@ function App() {
   }
   return (
     <>
-    <BrowserRouter>
-      <Navbar1 raja="Description" title="TextEditior" mode={mode} togglebutton={togglebutton} />
+    {/* <BrowserRouter> */}
 
+      <Navbar1 raja="Description" title="TextEditior" mode={mode} togglebutton={togglebutton} />
+      <Alert alert={alert} />
+
+       <div className="conatainer">
+      <Formarea1 mode={mode} alert={alert} showAlert={showAlert} />
+       </div>
 
       {/* <Navbar/> */}
-      <Alert alert={alert} />
       {/* <Formarea1 mode={mode} alert={alert} showAlert={showAlert} /> */}
 
       {/* <About /> */}
 
-       <Routes>
+       {/* <Routes> */}
      
-        <Route exact path="/formarea" element={<Formarea1 mode={mode} alert={alert} showAlert={showAlert} />} />
+        {/* <Route exact path="/formarea" element={<Formarea1 mode={mode} alert={alert} showAlert={showAlert} />} /> */}
 
-        <Route path="/about" element={<About />} />
+        {/* <Route path="/about" element={<About />} /> */}
 
 
-      </Routes> 
+      {/* </Routes>  */}
       
-    </BrowserRouter>
+    {/* </BrowserRouter> */}
 
 
 
